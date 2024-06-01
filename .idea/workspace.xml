@@ -4,15 +4,140 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="457df61c-d5e5-4289-a01c-d2b8e61337c5" name="Changes" comment="" />
+    <list default="true" id="457df61c-d5e5-4289-a01c-d2b8e61337c5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.github/workflows/main_primetals.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/DummyData/Steeper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/Icon/Folder-Alert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/Icon/Folder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/Icon/added_seccuess.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/Icon/icf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/Icon/icf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/Icon/ih.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/Icon/ih.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/Icon/ihr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/Icon/ihr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/Icon/isr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/Icon/isr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/Icon/line_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/Icon/log_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/Icon/sh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/Icon/sh.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/Icon/sividha_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/Icon/submitted_success.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/Icon/suvidha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/font/Gotham/Gotham Black/Gotham Black.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/font/Gotham/Gotham Bold Italic/Gotham Bold Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/font/Gotham/Gotham Extra Light Italic/Gotham Extra Light Italic.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/font/Gotham/Gotham Extra Light/Gotham Extra Light.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/font/Gotham/Gotham Italic/Gotham Italic.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/font/Gotham/Gotham ItalicBold/Gotham ItalicBold.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/font/Gotham/Gotham Medium/Gotham Medium.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/font/Gotham/Gotham Thin Italic/Gotham Thin Italic.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/font/Gotham/GothamBold/GothamBold.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/font/Gotham/GothamBook/GothamBook.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/font/Gotham/GothamLight/GothamLight.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/font/Gotham/GothamRegular/GothamRegular.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/font/Gotham/GothamThin/GothamThin.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/font/Gotham/GothamUltra/GothamUltra.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/font/Gotham/readme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/font/GothamBook.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/logo/pm-bg-yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/logo/pm_logo_orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/logo/pm_logo_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/logo/pt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/logo/suvida-man-img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/logo/suvidha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/logo/suvidha.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assets/logo/suvidhaa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/common/header/CustomNavlink.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/common/header/Header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/common/header/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/common/layout/Alternate.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/common/layout/DemoLayout.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/common/layout/Layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/common/layout/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/common/routes/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Global/Loader.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Global/ReactHookForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Global/Sidebar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Global/Stepper.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Global/Toaster.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Global/login.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/IDTServiceRequest/BackupRestoration.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/IDTServiceRequest/DatacardRequisition.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/IDTServiceRequest/FunctionalEmailSharedMailboxCreation.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/IDTServiceRequest/IDTServiceComp.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/IDTServiceRequest/LicensedSoftwareInstallation.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/IDTServiceRequest/MobileServiceActivation.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/IDTServiceRequest/MobileServiceActivationTest.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/IDTServiceRequest/NewVoiceConnection.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/IDTServiceRequest/PcRequirement.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/IDTServiceRequest/PersonalDetails.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/IDTServiceRequest/RemoteAccessService.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/IDTServiceRequest/ZScalerRequest.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/IDTServiceRequest/ZScalerRequestTest.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/date-range-picker/Calendar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/date-range-picker/DateRange.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/date-range-picker/DateRangePicker.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/dropdown/ServiceDropdown.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/dropdown/demo.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/dropdown/dropdown.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/modal/AlertModal.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/modal/CommonModal.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/modal/DatePickerModal.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/modal/DatePickerModal.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/modal/FileUpload.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/modal/FileUpload.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/modal/SaveModal.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/modal/SubmitModal.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/utils/DateFormatter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/utils/FormValidation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/utils/IconMapping.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/utils/Utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/module/idt-services/Dashboard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/module/idt-services/IDTClearenceForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/module/idt-services/IDTHelpdesk.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/module/idt-services/IDTSAPHelpdesk.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/module/idt-services/IDTServiceRequest.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/module/workflow/Dashboard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/module/workflow/MyAssignmentFormView.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/module/workflow/MyAssignments.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/module/workflow/MyWorkFlow.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/module/workflow/MyWorkflowFormView.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/redux/PrimetalsServiceslice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/services/ApiService.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/styles/Dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/styles/IDTServiceRequest.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/styles/MyAssignments.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/styles/MyWorkFlow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/styles/Stepper.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/styles/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/styles/sidebar.css" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/spacez" />
     <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -27,7 +152,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
