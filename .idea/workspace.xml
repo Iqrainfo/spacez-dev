@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="457df61c-d5e5-4289-a01c-d2b8e61337c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DB_Config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try.py" afterDir="false" />
-    </list>
+    <list default="true" id="457df61c-d5e5-4289-a01c-d2b8e61337c5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
