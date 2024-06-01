@@ -51,3 +51,10 @@ def insert_data_into_db(data: UserData):
 async def insert_data_endpoint(user_data: UserData):
     insert_data_into_db(user_data)
     return {"message": "Data inserted successfully"}
+
+
+@app.get("/")
+
+async def index():
+    return {"message": "Welcome to API"}
+
