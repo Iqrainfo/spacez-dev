@@ -68,4 +68,4 @@ async def login_user(user_login: UM.userlogin, db: Session = Depends(get_db)):
 
 @app.get("/")
 async def index():
-    return {"message": "Welcome to API"}
+    return {"message": "Welcome to API 2.0"}
