@@ -1,60 +1,71 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Depends,Request
 from pydantic import BaseModel, EmailStr
-from sqlalchemy import create_engine, text
 from sqlalchemy.exc import SQLAlchemyError
-from sqlalchemy.orm import sessionmaker
+from passlib.context import CryptContext
+from sqlalchemy.orm import Session
+from fastapi.responses import JSONResponse
+from argon2 import PasswordHasher
+from argon2.exceptions import VerifyMismatchError
+from Database_config import *
+import Database_config as DB
+
+# from Models import UserData
 
 # FastAPI app
 app = FastAPI()
+pwd_context = PasswordHasher()
 
-# Database connection
-DATABASE_URL = "postgresql://postgres:123456@localhost/spacez"  # Update with your actual connection string
-engine = create_engine(DATABASE_URL)
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-# Pydantic model for data validation
-class UserData(BaseModel):
-    username: str
-    name: str
-    docs_no: str
-    docs_type: str
-    email: EmailStr
-    mobile: str
-    address: str
-    password: str
 
-# Function to insert data into the database
-def insert_data_into_db(data: UserData):
+# FastAPI endpoint to insert data into the database
+@app.post("/insert-data/")
+async def insert_data_endpoint(user_data: UM.UserData,db: Session = Depends(get_db)):
     try:
-        with SessionLocal() as db:
-            # Construct the SQL INSERT statement
-            sql = text("INSERT INTO user_data (username, name, docs_no, docs_type, email, mobile, address, password) "
-                       "VALUES (:username, :name, :docs_no, :docs_type, :email, :mobile, :address, :password)")
-            # Execute the SQL statement with values from UserData object
-            db.execute(sql, {
-                "username": data.username,
-                "name": data.name,
-                "docs_no": data.docs_no,
-                "docs_type": data.docs_type,
-                "email": data.email,
-                "mobile": data.mobile,
-                "address": data.address,
-                "password": data.password
-            })
-            db.commit()
+        result = get_user_by_username_or_email(db, user_data.username or user_data.email)
+        if result:
+            return {"message": "User already exists","Error_code":"502"}
+
+        print('before call', user_data.password_hash)
+        # Hash the password
+        hash_password = pwd_context.hash(user_data.password_hash)
+        # Assign the hashed password to user_data
+        user_data.password_hash = hash_password
+        print('After call', hash_password, user_data.password_hash)
+
+        DB.insert_data_into_db(user_data)
+        return {"message": "Data inserted successfully"}
     except SQLAlchemyError as e:
         # If an error occurs during insertion, raise an HTTPException with a 500 status code
         raise HTTPException(status_code=500, detail=f"Failed to insert data into database: {e}")
 
-# FastAPI endpoint to insert data into the database
-@app.post("/insert-data/")
-async def insert_data_endpoint(user_data: UserData):
-    insert_data_into_db(user_data)
-    return {"message": "Data inserted successfully"}
+def verify_password(plain_password, hashed_password):
+    print(plain_password,hashed_password)
+    if plain_password == hashed_password:
+        return True
+    # return pwd_context.verify(plain_password, hashed_password)
+
+
+
+@app.post("/login/")
+async def login_user(user_login: UM.userlogin, db: Session = Depends(get_db)):
+    try:
+        # Fetch user by username or email
+        result = get_user_by_username_or_email(db, user_login.username or user_login.email)
+        print(result)
+        if result:
+            user_id, username, email, password_hash = result
+            if verify_password(user_login.password_hash, password_hash):
+                # Optionally update last login timestamp
+                update_last_login(db, user_id)
+                return {"message": "Login successful", "user_id": user_id, "username": username, "email": email}
+            else:
+                raise HTTPException(status_code=401, detail="Invalid credentials")
+        else:
+            raise HTTPException(status_code=404, detail="Invalid credentials")
+    except SQLAlchemyError as e:
+        raise HTTPException(status_code=500, detail=f"Failed to login: {e}")
 
 
 @app.get("/")
-
 async def index():
     return {"message": "Welcome to API"}
-
