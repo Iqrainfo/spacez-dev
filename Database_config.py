@@ -9,7 +9,8 @@ import os
 class DB_config:
 
     def __init__(self):
-        self.DATABASE_URL = os.environ.get("PLSQL_URL")
+        self.DATABASE_URL = "postgresql://userinfo_hw9w_user:TC1WKWwBUxv4eqyziCTfeXDQJ6081ht7@dpg-cpdoprv109ks73el94jg-a.oregon-postgres.render.com:5432/userinfo_hw9w"
+ #os.environ.get("PLSQL_URL")
         self.engine = create_engine(self.DATABASE_URL)
         self.SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=self.engine)
         self.engine = None
