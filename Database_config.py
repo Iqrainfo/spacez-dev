@@ -19,7 +19,7 @@ class DB_config:
         self.engine = create_engine(self.DATABASE_URL)
         self.SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=self.engine)
 
-   
+
 
     @contextmanager
     def get_db(self):
