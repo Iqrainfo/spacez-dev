@@ -9,9 +9,10 @@ import os
 class DB_config:
 
     def __init__(self):
-        self.DATABASE_URL = os.getenv("PLSQL_URL")
+        self.DATABASE_URL = os.environ.get("PLSQL_URL")
         self.engine = create_engine(self.DATABASE_URL)
         self.SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=self.engine)
+        self.engine = None
 
     def init_db_conn(self):
         self.DATABASE_URL = self.fnPSQL_token()
