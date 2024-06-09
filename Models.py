@@ -38,6 +38,6 @@ class User_models:
         @root_validator(pre=True)
         def check_username_or_email(cls, values):
             username, email = values.get('username'), values.get('email')
-            if not username and not email:
+            if username=="" and  email=="":
                 raise ValueError('Either username or email must be provided')
             return values
