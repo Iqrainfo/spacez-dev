@@ -15,7 +15,6 @@ pwd_context = PasswordHasher()
 
 
 
-# FastAPI endpoint to insert data into the database
 @app.post("/insert-data/")
 async def insert_data_endpoint(user_data: UM.UserData,db: Session = Depends(DB.get_db)):
     try:
