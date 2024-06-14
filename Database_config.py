@@ -7,14 +7,14 @@ import os
 class DB_config:
 
     def __init__(self):
-        self.DATABASE_URL =os.environ.get("PLSQL_URL")
+        self.DATABASE_URL = os.environ.get("PLSQL_URL")
         self.engine = create_engine(self.DATABASE_URL)
         self.SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=self.engine)
         self.engine = None
 
     def init_db_conn(self):
         self.DATABASE_URL = self.fnPSQL_token()
-        print('hell',self.DATABASE_URL)
+        # print('hell',self.DATABASE_URL)
         self.engine = create_engine(self.DATABASE_URL)
         self.SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=self.engine)
 
@@ -30,7 +30,7 @@ class DB_config:
 
     def get_user_by_username_or_email(self,db, login):
         with self.SessionLocal() as db:
-            print(login)
+            # print(login)
             sql = text("SELECT user_id, username, email, password_hash FROM users WHERE username = :login OR email = :login")
             return db.execute(sql, {"login": login}).fetchone()
 
