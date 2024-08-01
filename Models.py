@@ -1,3 +1,6 @@
+
+import uuid
+
 from pydantic import BaseModel, EmailStr, model_validator, root_validator
 from typing import Optional
 from datetime import date, datetime
@@ -41,3 +44,49 @@ class User_models:
             if username=="" and  email=="":
                 raise ValueError('Either username or email must be provided')
             return values
+
+    class UserBalance(BaseModel):
+        user_id: Optional[uuid.UUID]= "550e8400-e29b-41d4-a716-446655440000"
+
+        prev_balance: float
+        updated_at: date
+        order_type:Optional[str] = "Deposit"
+        order_amount:float
+        clr_balance:float
+
+
+        class Config:
+            orm_mode = True
+
+    class addtransaction(BaseModel):
+        pass
+
+    class order(BaseModel):
+        user_id:int
+        coin_name:str
+        coin_qty:int
+        coin_price:float
+        order_type:str
+
+    class coin_stock(BaseModel):
+        # coin_index:int
+        coin_code:str
+        coin_price:float
+        coin_qty:int
+        last_added_by:str
+        adding_date:Optional[date] = None
+        last_updated : Optional[date] = None
+
+    class coin_stock_Ledger(BaseModel):
+        coin_index:int
+        coin_code:str
+        coin_price:float
+        coin_qty:int
+        adding_date:Optional[date] = None
+        last_updated : Optional[date] = None
+    class response_body(BaseModel):
+        response_body :dict
+        response_code:Optional[int] = None
+        error_code:Optional[int] = None
+
+
